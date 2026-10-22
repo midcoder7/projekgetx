@@ -8,6 +8,11 @@ class MenuSoalPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final ids = 45;
+    final kat = 'olaharaga';
+    final pen = 'Sinta';
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menu Soal'),
