@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'Soal4Controller.dart';
+import 'Soal6Detail.dart';
 
 class MenuSoalPage extends StatelessWidget {
   const MenuSoalPage({super.key});
@@ -45,6 +46,12 @@ class MenuSoalPage extends StatelessWidget {
               },
               child: const Text('Soal 5'),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Get.toNamed('/detail?id=$ids&kategori=$kat&penulis=$pen');
+                },
+                child: Text('Soal 6: Mengirim Data Lewat Query String')),
+
           ],
         ),
       ),

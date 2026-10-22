@@ -30,7 +30,7 @@ final TextEditingController nameController = TextEditingController();
                     textCancel: 'Batal',
                     textConfirm: 'Ya',
                     onConfirm: () {
-                      Get.offNamed('/soal5succespage');
+                      Get.offNamed('/Soal5SuccsesPage');
                     },
                     onCancel: () {
                       Get.back();

@@ -6,13 +6,13 @@ class Soal5FormPage extends StatelessWidget {
    Soal5FormPage({super.key});
 
     final Soal5Controller controller = Get.put(Soal5Controller());
-    final Eskul = Get.arguments['Eskul'];
+    final Esk = Get.arguments['Eskul'];
 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Eskul: $Eskul')),
+      appBar: AppBar(title: Text('Eskul: $Esk')),
       body: Center(
         child: Column(
           children: [
@@ -25,7 +25,7 @@ class Soal5FormPage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
-                controller.eskulController.text = Eskul;
+                controller.eskulController.text = Esk;
                 controller.Daftar();
 
               },
